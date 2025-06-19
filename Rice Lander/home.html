@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+</head>
+<header>
+    <div class="logo">
+        <img src="images/companylogo.jpg" alt="Company Logo" id="companyLogo">
+    </div>
+    <div class="auth-cart-container">
+            <a href=""><i class="Home"></i> Home</a>
+            <a href="order.php"><i class=""></i> Product</a>
+            <a href=""><i class="Service"></i> Service</a>
+            <a href=""><i class="About US"></i> About Us</a>
+            <a href=""><i class="Contact Us"></i> Contact Us</a>
+        
+        <div class="auth-buttons">
+            <button id="loginBtn" onclick="location.href='login.php'">Login</button>
+            <button id="signupBtn" onclick="location.href='register.php'">Sign Up</button>
+        </div>
+        <button id="cartBtn"><i class="fas fa-shopping-cart"></i> Cart (0)</button>
+        </div>
+    </div>
+    </div>
+</header>
+<main class="home-main">
+    <div class="main">
+        <h1>Rice Lander</h1><br>
+    </div>
+    <div class="btns">
+        <button class="button1"><b>Farmer Login</b></button>
+        <button class="button2" onclick="location.href='login.php'"><b>Customer Login</b></button>
+        <button class="button3" onclick="location.href='./isp/php/login.php'"><b>Staff Login</b></button>
+        
+    </div>
+</main>
+<script src="home.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>Rice Lander offers an unparalleled premium experience, providing top-quality paddy products directly from the heart of our fields. With a focus on excellence and customer satisfaction, our island-wide services are tailored to meet all your rice-related needs.</p>
+            </div>
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p>Email: info@ricelander.com</p>
+                <p>Phone: 011-1122856</p>
+                <p>Address: 123 Luxury St., Wellawatte, Colombo,Srilanka</p>
+            </div>
+            <div class="map">
+                <h3>Our Location</h3>
+                <iframe src="https://www.google.com/maps/embed?..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rice Lander. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

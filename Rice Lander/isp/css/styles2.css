@@ -1,0 +1,97 @@
+body {
+    background: url("../img/paddy.jpg") no-repeat center center fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    position: relative;
+}
+
+#pic
+{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+#pic2
+{
+    width: 30px;
+    height: 30px;
+    float: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+#img3
+{
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+#div2
+{
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+#table
+{
+    min-height: 73.9vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#inventory_tbl
+{
+    /* border-radius: 12px; */
+    width: 100%;
+    border-collapse: collapse;
+    /* background-color: #D9D9D9; */
+    background-color: #ffffff;
+}
+
+#inventory_tbl th 
+{
+    border: 1px solid #000000;
+    padding: 12px;
+    text-align: center;
+}
+
+header
+{
+    background-color: #A39F9F;
+}
+
+footer
+{
+    background-color: #A39F9F;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn_up 
+{
+    background-color: green; 
+    border-radius: 5px; 
+    border: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btn_del 
+{
+    background-color: red; 
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

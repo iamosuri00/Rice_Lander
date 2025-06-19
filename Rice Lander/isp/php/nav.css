@@ -1,0 +1,13 @@
+.auth-cart-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 20px;
+    text-decoration: none;
+    justify-content: space-between;
+    position: relative;
+    top: -5px;
+    color: #f4f4f4;
+}

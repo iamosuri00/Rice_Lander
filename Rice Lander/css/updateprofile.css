@@ -1,0 +1,126 @@
+body{
+   color: #ffffff;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 30px;
+   background-color: #333;
+   border-bottom: 1px solid #333;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+   margin: 0;
+   font-size: 24px;
+   color: #333;
+}
+
+header .highlight {
+   color: #007bff;
+}
+
+header a {
+   margin-left: 20px;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   display: flex;
+   align-items: center;
+}
+
+.logo {
+   flex: 0 0 auto; /* Prevents the logo from growing */
+}
+
+#companyLogo {
+   height: 50px; /* Adjust the height as necessary */
+   width: auto; /* Keep the aspect ratio */
+}
+
+.header-right {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   padding: 7px;
+   border-radius: 4px;
+   gap: 20px;
+}
+
+.header-right a {
+   margin-left: 20px;
+   color: #ffffff;
+   text-decoration: none;
+}
+
+.header-right a:hover {
+   color: #007bff;
+}
+
+main {
+   flex: 1; /* Allows the main content to grow and push footer to bottom */
+   display: flex;
+   padding: 20px 5%;
+}
+
+
+/* Footer */
+footer {
+   background-color: #002b36;
+   color: white;
+   padding: 20px 20px; /* Reduced padding */
+   text-align: center;
+}
+
+.footer-content {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.footer-content div {
+   flex: 1;
+   margin: 10px;
+}
+
+.footer-content h3 {
+   color: #93a1a1;
+   margin-bottom: 10px;
+}
+
+.footer-content p, .footer-content iframe {
+   color: #eee8d5;
+}
+
+.footer-bottom {
+   border-top: 1px solid #586e75;
+   margin-top: 10px; /* Reduced margin */
+   padding-top: 10px;
+}
+
+.bg-map1, .bg-tp, .bg-mail {
+   width: 30px; /* Reduced size */
+   height: 30px; /* Reduced size */
+   border-radius: 50%; /* Changed from square to circle */
+}
+
+.bg-map1 {
+   background: url('css_sprites.PNG') -8px -8px no-repeat;
+}
+
+.bg-tp {
+   background: url('css_sprites.PNG') -64px -8px no-repeat;
+}
+
+.bg-mail {
+   background: url('css_sprites.PNG') -120px -8px no-repeat;
+}
+.message {
+   margin: 10px 0;
+   padding: 10px;
+   background-color: #f8d7da;
+   border: 1px solid #f5c6cb;
+   color: #721c24;
+   border-radius: 5px;
+}

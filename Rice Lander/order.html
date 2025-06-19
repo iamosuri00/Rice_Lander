@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddy Order Page</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+<header>
+    <div class="logo">
+        <img src="images/companylogo.jpg" alt="Company Logo" id="companyLogo">
+    </div>
+    <div class="auth-cart-container">
+            <a href="chome.php"><i class="CHome"></i> Home</a>
+            <a href=""><i class="Products"></i> Products</a>
+            <a href=""><i class="Service"></i> Service</a>
+            <a href=""><i class="About US"></i> About Us</a>
+            <a href=""><i class="Contact Us"></i> Contact Us</a>
+            <a href="profile.php"><i class=""></i>My Account</a>
+        
+        <div class="auth-buttons">
+            <button id="loginBtn" onclick="location.href='login.html'">Login</button>
+            <button id="signupBtn" onclick="location.href='signup.html'">Sign Up</button>
+        </div>
+        <button id="cartBtn"><i class="fas fa-shopping-cart"></i> Cart (0)</button>
+        </div>
+    </div>
+    </div>
+</header>
+    
+    <main> 
+        <h1>Order Your Paddy</h1>
+        <div class="background-blur" style="background-image: url('images/orderback.jpg');"></div>
+        <div class="paddy-container">
+             <!-- Paddy Item 1 -->
+             <div class="paddy-item">
+                <img src="images/White Raw.jpg" alt="Paddy Type 6">
+                <h2>White Raw</h2>
+                <p>Price: Rs. 200 per kg</p>
+                <p>Availability: In Stock</p>
+                <button class="addtocartBtn" data-paddy="White Raw" data-price="800.00">Add to cart</button>
+            </div>
+
+            <!-- Paddy Item 2 -->
+            <div class="paddy-item">
+                <img src="images/Red Raw Samba.jpg" alt="Paddy Type 7">
+                <h2>Red Raw Samba</h2>
+                <p>Price: Rs. 240 per kg</p>
+                <p>Availability: In Stock</p>
+                <button class="addtocartBtn" data-paddy="Red Raw Samba" data-price="700.00">Add to cart</button>
+            </div>
+
+            <!-- Paddy Item  3-->
+            <div class="paddy-item">
+                <img src="images/White Raw Samba.jpg" alt="Paddy Type 8">
+                <h2>White Raw Samba</h2>
+                <p>Price: Rs. 230 per kg</p>
+                <p>Availability: In Stock</p>
+                <button class="addtocartBtn" data-paddy="White Raw Samba" data-price="850.00">Add to cart</button>
+            </div>
+
+             <!-- Paddy Item 5 -->
+             <div class="paddy-item">
+                <img src="images/nadu.jpg" alt="Paddy Type 10">
+                <h2>Nadu</h2>
+                <p>Price: Rs. 210 per kg</p>
+                <p>Availability: In Stock</p>
+                <button class="addtocartBtn" data-paddy="Nadu" data-price="950.00">Add to cart</button>
+            </div>
+
+             <!-- Paddy Item 5 -->
+             <div class="paddy-item">
+                <img src="images/basmathi.jpg" alt="Paddy Type 9">
+                <h2>Basmati</h2>
+                <p>Price: Rs. 645 per kg</p>
+                <p>Availability: In Stock</p>
+                <button class="addtocartBtn" data-paddy="Basmati" data-price="1200.00">Add to cart</button>
+            </div>
+
+             <!-- Paddy Item  6-->
+             <div class="paddy-item">
+                <img src="images/suwadal.jpg" alt="Paddy Type 1">
+                <h2>Suwandel</h2>
+                <p>Price: Rs. 650 per kg</p>
+                <p>Availability: In Stock</p>
+                <button class="addtocartBtn" data-paddy="Suwandel" data-price="600.00">Add to cart</button>
+            </div>
+
+            <!-- Paddy Item 7 -->
+            <!-- <div class="paddy-item">
+                <img src="images/Kalu Heenati.jpg" alt="Paddy Type 2">
+                <h2>Kalu Heenati</h2>
+                <p>Price: Rs. 750 per kg</p>
+                <p>Availability: In Stock</p>
+                <button class="addtocartBtn" data-paddy="Kalu Heenati" data-price="750.00">Add to cart</button>
+            </div> -->
+
+            <!-- Paddy Item 8 -->
+            <!-- <div class="paddy-item">
+                <img src="images/Sudu Heenati.jpg" alt="Paddy Type 3">
+                <h2>Sudu Heenati</h2>
+                <p>Price: Rs. 900 per kg</p>
+                <p>Availability: Out of Stock</p>
+                <button class="addtocartBtn" data-paddy="Sudu Heenati" data-price="900.00" disabled>Add to cart</button>
+            </div> -->
+
+            <!-- Paddy Item 9 -->
+            <div class="paddy-item">
+                <img src="images/Madathawalu.jpg" alt="Paddy Type 4">
+                <h2>Madathawalu</h2>
+                <p>Price: Rs. 1200 per kg</p>
+                <p>Availability: In Stock</p>
+                <button class="addtocartBtn" data-paddy="Madathawalu" data-price="1200.00">Add to cart</button>
+            </div>
+
+            <!-- Paddy Item 10 -->
+            <div class="paddy-item">
+                <img src="images/Pachchaperumal.jpg" alt="Paddy Type 5">
+                <h2>Pachchaperumal</h2>
+                <p>Price: Rs. 1050 per kg</p>
+                <p>Availability: In Stock</p>
+                <button class="addtocartBtn" data-paddy="Pachchaperumal" data-price="1050.00">Add to cart</button>
+            </div>
+
+        
+        </div>
+    </main>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2>Order Form</h2>
+            <form id="orderForm">
+                <label for="paddyType">Paddy Type:</label>
+                <input type="text" id="paddyType" name="paddyType" readonly>
+
+                <label for="pricePerKg">Price per kg:</label>
+                <input type="text" id="pricePerKg" name="pricePerKg" readonly>
+
+                <label for="quantity">Quantity (kg):</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="totalPrice">Total Price:</label>
+                <input type="text" id="totalPrice" name="totalPrice" readonly>
+
+                <button type="submit">Add to cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="closeCartBtn">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <h3 id="cartTotal">Total: Rs. 0.00</h3>
+        </div>
+    </div>
+
+    <script src="order.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>Rice Lander offers an unparalleled premium experience, providing top-quality paddy products directly from the heart of our fields. With a focus on excellence and customer satisfaction, our island-wide services are tailored to meet all your rice-related needs.</p>
+            </div>
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p>Email: info@ricelander.com</p>
+                <p>Phone: 011-1122856</p>
+                <p>Address: 123 Luxury St., Wellawatte, Colombo,Srilanka</p>
+            </div>
+            <div class="map">
+                <h3>Our Location</h3>
+                <iframe src="https://www.google.com/maps/embed?..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rice Lander. All rights reserved.</p>
+        </div>
+    </footer>
+
+          
+
+</body>
+</html>

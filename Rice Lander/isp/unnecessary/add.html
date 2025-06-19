@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Lander</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <img src="../img/ricelandernew.png" alt="Background Image" class="background-img">
+    <div class="container">
+        <div class="content">
+            <!-- <div class="field">
+                <span class="label">Paddy type :</span>
+                <span class="value">Nadu</span>
+            </div>
+            <div class="field">
+                <span class="label">Quantity :</span>
+                <span class="value">2KG</span>
+            </div>
+            <div class="field">
+                <span class="label">Price :</span>
+                <span class="value">300/=</span>
+            </div> -->
+
+            <div id="form_container">
+                <form method="post" action="../php/add_paddy.php" id="add_padding_form">
+
+                    <h2>Add Paddy</h2>
+    
+                    <div id="type_div">
+                        <label for="p_type">Paddy type :</label>
+                        <input type="text" id="p_type" name="Paddy_Type">
+                    </div>
+                    <br>
+    
+                    <div>
+                        <label for="Quan">Quantity :</label>
+                        <input type="text" id="Quan" name="Quantity">
+                    </div>
+                    <br>
+    
+                    <div>
+                        <label for="pric">Price :</label>
+                        <input type="text" id="pric" name="Price">
+                    </div>
+                    <br>
+    
+                    <button type="submit" class="ok-button" name="paddy_details">OK</button>
+    
+                </form>
+            </div>
+        </div>
+        <!-- <button class="ok-button">OK</button> -->
+    </div>
+</body>
+</html>

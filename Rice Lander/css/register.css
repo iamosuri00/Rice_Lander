@@ -1,0 +1,168 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('../images/home.jpg');
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #cae4c5;
+    border-radius: 80px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 25px;;
+}
+
+.image-container {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 80px;
+    border: 1px solid #26b16b;
+    margin-left: -3px;
+    max-height: fit-content;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #555;
+    font-weight: bold; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],  /* Ensure the phone input is styled */
+input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #181818;
+    font-size: 14px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+.btn {
+    width: 50%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 2px;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    text-decoration: underline;
+}
+
+.social-btn {
+    width: 98%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-btn i {
+    margin-right: 10px;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.facebook:hover {
+    background-color: #2d4373;
+}
+
+.google {
+    background-color: #39dd3f;
+    color: white;
+}
+
+.google:hover {
+    background-color: #39dd3f; /* Maintain the hover effect */
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+.message {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
